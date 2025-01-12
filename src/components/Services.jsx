@@ -1,5 +1,7 @@
-import React, { PureComponent } from 'react'
+import React, { PureComponent } from 'react';
 import { Link } from "react-router-dom";
+import computer from "../images/computer.jpg";
+import map from '../images/map.jpg';
 
 class Services extends PureComponent {
     constructor(props) {
@@ -19,7 +21,7 @@ class Services extends PureComponent {
 
           <div className="flex flex-row font-reg tracking-wide text-center max-md:flex-col">
           <div className="w-[350px] max-md:w-[160px]  border ml-20 max-md:ml-6 ">
-            <img src="src/photos/computer.jpg" alt="Laptop" className="h-[px] w-full  object-cover" />
+            <img src={computer} alt="Laptop" className="h-[px] w-full  object-cover" />
             <div className="p-4 max-md:p-2">
             <h1 className="text-lg font-reg font-semibold">Global Information</h1>
             <p className="mt-3 max-md:mt-2 max-md:text-xs text-sm text-gray-600 text-balance ">
@@ -35,7 +37,7 @@ class Services extends PureComponent {
           </div>
 
           <div className="w-[350px] max-md:w-[160px] border ml-20 max-md:ml-6 max-md:mt-5">
-            <img src="src/photos/map.jpg" alt="Laptop" className="h-[px] w-full  object-cover"/>
+            <img src={map} alt="Laptop" className="h-[px] w-full  object-cover"/>
             <div className="p-4 max-md:p-2">
             <h1 className="text-lg font-reg font-semibold">City Database</h1>
             <p className="mt-3 text-sm text-gray-600 text-balance max-md:mt-2 max-md:text-xs">
@@ -51,7 +53,7 @@ class Services extends PureComponent {
           </div>
 
           <div className="w-[350px] max-md:w-[160px] border ml-20 max-md:ml-6 max-md:mt-5">
-            <img src="src/photos/computer.jpg" alt="Laptop" className="h-[px] w-full  object-cover"/>
+            <img src={computer} alt="Laptop" className="h-[px] w-full  object-cover"/>
             <div className="p-4 max-md:p-2">
             <h1 className="text-lg font-reg font-semibold">Data Sourcing</h1>
             <p className="mt-3 text-sm text-gray-600 text-balance max-md:mt-2 max-md:text-xs">

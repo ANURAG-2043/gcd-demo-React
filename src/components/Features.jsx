@@ -1,4 +1,5 @@
-import React, { PureComponent } from 'react'
+import React, { PureComponent } from 'react';
+import city from '../images/city.jpg';
 
 class Features extends PureComponent {
     constructor(props) {
@@ -53,7 +54,7 @@ class Features extends PureComponent {
 
                 <div className="w-[350px] max-md:w-[160px] max-md:ml-6  border ml-20">
                 <div className="p-4 max-md:p-3">
-                <img src="src/photos/city.jpg" alt="Laptop" className="h-[px] w-full rounded-md object-cover" />
+                <img src={city} alt="Laptop" className="h-[px] w-full rounded-md object-cover" />
                 </div>
                 </div>
             </div>

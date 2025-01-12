@@ -1,4 +1,5 @@
-import React, { PureComponent } from 'react'
+import React, { PureComponent } from 'react';
+import logo1 from '../images/logo1.png'
 
 
 
@@ -17,10 +18,10 @@ class Rate extends PureComponent {
 
                 <div className="flex flex-row justify-between max-md:text-center w-max-fit pt-6 bg-white px-24 max-md:hidden">
                   <h2 className="text-xl font-semibold max-md:text-sm">Featured in</h2>
-                  <img src="src/photos/logo1.png" alt="" className="h-[60px] w-[px] max-md:h-[px] max-md:w-[100px] "/>
-                  <img src="src/photos/logo1.png" alt="" className="h-[60px] w-[px] max-md:h-[px] max-md:w-[100px]"/>
-                  <img src="src/photos/logo1.png" alt="" className="h-[60px] w-[px] max-md:h-[px] max-md:w-[100px]"/>
-                  <img src="src/photos/logo1.png" alt="" className="h-[60px] w-[px] max-md:h-[px] max-md:w-[100px]"/>
+                  <img src={logo1} alt="" className="h-[60px] w-[px] max-md:h-[px] max-md:w-[100px] "/>
+                  <img src={logo1} alt="" className="h-[60px] w-[px] max-md:h-[px] max-md:w-[100px]"/>
+                  <img src={logo1} alt="" className="h-[60px] w-[px] max-md:h-[px] max-md:w-[100px]"/>
+                  <img src={logo1} alt="" className="h-[60px] w-[px] max-md:h-[px] max-md:w-[100px]"/>
                 </div>
 
 

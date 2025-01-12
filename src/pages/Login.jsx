@@ -26,8 +26,9 @@ const Login = () => {
 
 
   const handleGoogleLogin = async () => {
-    const successUrl = 'http://localhost:5173/'; // Update if necessary
-    const failureUrl = 'http://localhost:5173/fail';
+    const successUrl = 'https://anurag-2043.github.io/gcd-demo-React/'; // URL of your app's homepage
+    const failureUrl = 'https://anurag-2043.github.io/gcd-demo-React/fail'; // A page to handle login failure
+
   
     try {
       await account.createOAuth2Session('google', successUrl, failureUrl);

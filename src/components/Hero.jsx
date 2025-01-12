@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import { Link } from "react-router-dom";
+import globe from "../images/globe.jpg"
 
 
 class Hero extends PureComponent {
@@ -36,7 +37,7 @@ class Hero extends PureComponent {
             </div>
             <div className="md:h-[px] md:w-[330px] me-20 ms-8 my-14 max-md:w-[160px] max-md:me-4 max-md:ms-2 max-md:my-4 max-md:pb-2">
               <img
-                src="src/photos/globe.jpg"
+                src={globe}
                 alt="Laptop"
                 className="h-full w-full rounded-md object-cover"
               />

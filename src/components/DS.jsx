@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import { Link } from 'react-router-dom';
+import dp1 from '../images/dp1.jpg'
 
 
 class DS extends PureComponent {
@@ -84,7 +85,7 @@ class DS extends PureComponent {
                     </p>
 
                     <div className="flex items-center space-x-2 max-md:space-x-1 mt-4">
-                        <img className="inline-block h-10 max-md:h-6 max-md:w-6 w-10 rounded-full" src="src/images/dp1.jpg" alt="Dan_Abromov"/>
+                        <img className="inline-block h-10 max-md:h-6 max-md:w-6 w-10 rounded-full" src={dp1} alt="Dan_Abromov"/>
                         <span className="flex flex-col">
                         <span className="text-sm max-md:text-xs font-semibold text-gray-900 uppercase">julie robinson</span>
                         </span>
@@ -104,7 +105,7 @@ class DS extends PureComponent {
                     </p>
 
                     <div className="flex items-center space-x-2 max-md:space-x-1 mt-4">
-                        <img className="inline-block h-10 w-10 max-md:h-6 max-md:w-6 rounded-full" src="src/images/dp1.jpg" alt="Dan_Abromov"/>
+                        <img className="inline-block h-10 w-10 max-md:h-6 max-md:w-6 rounded-full" src={dp1} alt="Dan_Abromov"/>
                         <span className="flex flex-col">
                         <span className="text-sm font-semibold max-md:text-xs text-gray-900 uppercase">james brook</span>
                         </span>

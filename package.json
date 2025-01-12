@@ -1,15 +1,20 @@
 {
+  "homepage": "https://anurag-2043.github.io/gcd-demo-React",
   "name": "landingpage",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "format": "prettier --write"
-  },
+  }, 
+
   "dependencies": {
     "@react-oauth/google": "^0.12.1",
     "appwrite": "^16.1.0",
@@ -21,6 +26,7 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.1.1"
   },
+
   "devDependencies": {
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",

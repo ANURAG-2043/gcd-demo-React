@@ -41,7 +41,7 @@ function App() {
         <AuthProvider>
         <Navbar />
         <Routes>
-          <Route path="/" element={ <>
+          <Route path="/gcd-demo-React" element={ <>
                 <Hero />
                 <Rate />
                 <Services />
