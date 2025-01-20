@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from 'react';
 
 import Navbar from "./components/Navbar";
-import { AuthProvider } from './utils/AuthContext';
+// import { AuthProvider } from './utils/AuthContext';
 
 import Hero from "./components/Hero";
 import Rate from "./components/Rate";
@@ -38,10 +38,10 @@ function App() {
   return (
     <>
       <Router>
-        <AuthProvider>
+        {/* <AuthProvider> */}
         <Navbar />
         <Routes>
-          <Route path="/gcd-demo-React" element={ <>
+          <Route path="/" element={ <>
                 <Hero />
                 <Rate />
                 <Services />
@@ -74,7 +74,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
-        </AuthProvider>
+        {/* </AuthProvider> */}
       </Router>
     </>
       );

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-import { account } from "../utils/appwrite";
+// import { account } from "../utils/appwrite";
 import { useNavigate } from "react-router-dom";
-import { useAuth} from "../utils/AuthContext";
+// import { useAuth} from "../utils/AuthContext";
 
 const Login = () => {
   const navigate = useNavigate()
@@ -16,34 +16,34 @@ const Login = () => {
   },[user, navigate])
 
   const handleLogin = async (event) => {
-    event.preventDefault();
-    const email = loginForm.current.email.value;
-    const password = loginForm.current.password.value;
+    // event.preventDefault();
+    // const email = loginForm.current.email.value;
+    // const password = loginForm.current.password.value;
 
-    const userInfo = {email, password}
-    loginUser(userInfo)
+    // const userInfo = {email, password}
+    // loginUser(userInfo)
   };
 
 
   const handleGoogleLogin = async () => {
-    const successUrl = 'https://anurag-2043.github.io/gcd-demo-React/'; // URL of your app's homepage
-    const failureUrl = 'https://anurag-2043.github.io/gcd-demo-React/fail'; // A page to handle login failure
+    // const successUrl = 'https://anurag-2043.github.io/gcd-demo-React/'; // URL of your app's homepage
+    // const failureUrl = 'https://anurag-2043.github.io/gcd-demo-React/fail'; // A page to handle login failure
 
   
-    try {
-      await account.createOAuth2Session('google', successUrl, failureUrl);
+    // try {
+    //   await account.createOAuth2Session('google', successUrl, failureUrl);
   
-      // Fetch user data after successful login
-      const userDetails = await account.get();
-      console.log("Login successful:", userDetails);
+    //   // Fetch user data after successful login
+    //   const userDetails = await account.get();
+    //   console.log("Login successful:", userDetails);
   
-      // Update user in AuthContext
-      setUser(userDetails);
-      alert(`Login Successful! Welcome, ${userDetails.name}`);
-    } catch (error) {
-      console.error('Login or Fetch User Data Failed:', error);
-      alert(`Login Failed: ${error.message}`);
-    }
+    //   // Update user in AuthContext
+    //   setUser(userDetails);
+    //   alert(`Login Successful! Welcome, ${userDetails.name}`);
+    // } catch (error) {
+    //   console.error('Login or Fetch User Data Failed:', error);
+    //   alert(`Login Failed: ${error.message}`);
+    // }
   };  
 
     return (

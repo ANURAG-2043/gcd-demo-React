@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { account } from "../../utils/appwrite";
+// import { account } from "../../utils/appwrite";
 import { Navigate } from "react-router-dom";
 
 import  platinum_img from "../../images/productImages/cities-platinum.png"
@@ -12,28 +12,28 @@ export default function Platinum() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [redirect, setRedirect] = useState(false);
 
-  useEffect(() => {
-    // Check if the user is logged in
-    const checkAuthStatus = async () => {
-      try {
-        await account.get(); // Fetch user details
-        setIsAuthenticated(true);
-      } catch (error) {
-        console.error("User is not authenticated:", error);
-        setIsAuthenticated(false);
-      }
-    };
-    checkAuthStatus();
-  }, []);
+  // useEffect(() => {
+  //   // Check if the user is logged in
+  //   const checkAuthStatus = async () => {
+  //     try {
+  //       await account.get(); // Fetch user details
+  //       setIsAuthenticated(true);
+  //     } catch (error) {
+  //       console.error("User is not authenticated:", error);
+  //       setIsAuthenticated(false);
+  //     }
+  //   };
+  //   checkAuthStatus();
+  // }, []);
 
   const handleDownloadClick = () => {
-    if (!isAuthenticated) {
-      alert("Please log in to access the download button.");
-      setRedirect(true); // Set redirect state if user is not logged in
-    } else {
-      console.log("Initiate download...");
-      // Add your download logic here
-    }
+    // if (!isAuthenticated) {
+    //   alert("Please log in to access the download button.");
+    //   setRedirect(true); // Set redirect state if user is not logged in
+    // } else {
+    //   console.log("Initiate download...");
+    //   // Add your download logic here
+    // }
   };
 
   if (redirect) {

@@ -1,7 +1,7 @@
 
 import React, {   useEffect, useRef } from "react"; 
 import { useNavigate } from "react-router-dom";
-import { useAuth } from '../utils/AuthContext'
+// import { useAuth } from '../utils/AuthContext'
 
 const Register = () => {
   const registerForm = useRef(null)
