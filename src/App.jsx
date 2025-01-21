@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
-import ServicePage from './pages/ServicePage';
+import ProductPage from './pages/ProductPage';
 import Login from './pages/Login';
 import NotFound from './pages/NotFound';
 import DataSourcing from "./pages/DataSourcing";
@@ -59,7 +59,7 @@ function App() {
           
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/service-page" element={<ServicePage />} />
+          <Route path="/product-page" element={<ProductPage />} />
 
           <Route path="/free" element={<FreeEdition />} />
           <Route path="/basic" element={<BasicEdition />} />

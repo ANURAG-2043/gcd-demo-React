@@ -18,8 +18,8 @@ const Navbar = () => {
 
         {/* Links */}
         <div className="hidden lg:flex space-x-8">
-          <Link to="/service-page" className="text-sm text-gray-800 hover:text-gray-900">
-            Services
+          <Link to="/product-page" className="text-sm text-gray-800 hover:text-gray-900">
+            Products
           </Link>
           <Link to="/about-us" className="text-sm text-gray-800 hover:text-gray-900">
             About Us

@@ -9,8 +9,8 @@ import s3 from "../../images/steps/free_steps_imgs/step-3.png";
 import s4 from "../../images/steps/free_steps_imgs/step-4.png";
 
 export default function Free() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [redirect, setRedirect] = useState(false);
+  // const [isAuthenticated, setIsAuthenticated] = useState(false);
+  // const [redirect, setRedirect] = useState(false);
 
   // useEffect(() => {
   //   // Check if the user is logged in
@@ -27,6 +27,7 @@ export default function Free() {
   // }, []);
 
   const handleDownloadClick = () => {
+    console.log("DOwnload initiated")
     // if (!isAuthenticated) {
     //   alert("Please log in to access the download button.");
     //   setRedirect(true); // Set redirect state if user is not logged in
@@ -36,9 +37,9 @@ export default function Free() {
     // }
   };
 
-  if (redirect) {
-    return <Navigate to="/login" replace />;
-  }
+  // if (redirect) {
+  //   return <Navigate to="/login" replace />;
+  // }
 
   return (
     <>

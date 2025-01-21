@@ -11,13 +11,13 @@ const AboutUs = () => {
         Welcome to <strong>GeoCityDatabase</strong>, your premier source for comprehensive city characteristics and global information services. We pride ourselves on simplifying access to accurate, up-to-date data on cities, nations, and regions worldwide. Whether you are an academic, an analyst, or a business professional, GeoCityDatabase is your trusted partner for research and analysis.
       </p>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mt-16 mb-6">
+     {/* <h2 className="text-2xl font-semibold text-gray-800 mt-16 mb-6">
         Who We Are
       </h2>
       <p className="text-lg leading-8 text-gray-700 mb-8">
         GeoCityDatabase is a dynamic platform designed to deliver reliable insights and valuable data to support wise judgments and informed decision-making. With a user-friendly interface and expertly curated content, we cater to a diverse audience seeking quality information about cities and global regions.
       </p>
-
+ 
       <h2 className="text-2xl font-semibold text-gray-800 mt-16 mb-6">
         What We Offer
       </h2>
@@ -71,7 +71,7 @@ const AboutUs = () => {
             &mdash; Julie Robinson
           </footer>
         </blockquote>
-      </div>
+      </div> 
 
       <h2 className="text-2xl font-semibold text-gray-800 mt-16 mb-6">
         Features & Benefits
@@ -82,7 +82,7 @@ const AboutUs = () => {
         <li>Essential resource for businesses and academia.</li>
         <li>Easy access to global information services.</li>
         <li>A valuable tool for supporting research and analysis.</li>
-      </ul>
+      </ul>*/}
     </div>
   );
 };
