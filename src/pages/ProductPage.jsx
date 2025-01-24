@@ -6,6 +6,8 @@ import gold_img from "../images/productImages/cities-gold-top.png"
 import platinum_img from "../images/productImages/cities-platinum.png"
 import premium_img from "../images/productImages/cities-premium.png"
 import titanium_img from "../images/productImages/cities-titanium-top.png"
+import location_search from "../images/productImages/web-service-location-search.png"
+import major_cities from "../images/productImages/major-cities.png"
 
 const ProductPage  = () => {
   return (
@@ -71,8 +73,7 @@ const ProductPage  = () => {
             </div>
             <div className="product_images text-center">
               <img
-                src="https://www.google.com/imgres?q=yt&imgurl=https%3A%2F%2Fwww.computerhope.com%2Fjargon%2Fy%2Fyt.png&imgrefurl=https%3A%2F%2Fwww.computerhope.com%2Fjargon%2Fy%2Fyt.htm&docid=L786873NNUWcxM&tbnid=ZjCKO6mGX6gbJM&vet=12ahUKEwigleetl46LAxUfyDgGHRVTNB4QM3oECHEQAA..i&w=300&h=215&hcb=2&ved=2ahUKEwigleetl46LAxUfyDgGHRVTNB4QM3oECHEQAA"
-                alt="Major Cities"
+                src={location_search} alt="Major Cities"
                 className="w-[180px] h-[210px]"
               />
               <Link to="/major-cities" className="text-blue-500 hover:underline mt-2 block">
@@ -84,8 +85,7 @@ const ProductPage  = () => {
             </div>
             <div className="product_images text-center">
               <img
-                src="https://www.google.com/imgres?q=yt&imgurl=https%3A%2F%2Fwww.computerhope.com%2Fjargon%2Fy%2Fyt.png&imgrefurl=https%3A%2F%2Fwww.computerhope.com%2Fjargon%2Fy%2Fyt.htm&docid=L786873NNUWcxM&tbnid=ZjCKO6mGX6gbJM&vet=12ahUKEwigleetl46LAxUfyDgGHRVTNB4QM3oECHEQAA..i&w=300&h=215&hcb=2&ved=2ahUKEwigleetl46LAxUfyDgGHRVTNB4QM3oECHEQAA"
-                alt="Location Search Web Service"
+                src={major_cities} alt="Location Search Web Service"
                 className="w-[180px] h-[210px]"
               />
               <Link to="/location-service" className="text-blue-500 hover:underline mt-2 block">
