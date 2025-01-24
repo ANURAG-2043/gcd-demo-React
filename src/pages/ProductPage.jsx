@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import free_img from "../images/productImages/cities-free.png";
-import basic_img from "../images/productImages/basic.jpg"
+import basic_img from "../images/productImages/basic.png"
 import gold_img from "../images/productImages/cities-gold-top.png"
 import platinum_img from "../images/productImages/cities-platinum.png"
 import premium_img from "../images/productImages/cities-premium.png"
