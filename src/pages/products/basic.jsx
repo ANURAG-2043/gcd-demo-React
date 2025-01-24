@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 // import { account } from "../../utils/appwrite";
 import { Navigate } from "react-router-dom";
 
-import  basic_img from "../../images/productImages/basic.jpg"
+import  basic_img from "../../images/productImages/basic.png"
 import s1 from "../../images/steps/free_steps_imgs/step-1.png";
 import s2 from "../../images/steps/free_steps_imgs/step2.png";
 import s3 from "../../images/steps/free_steps_imgs/step-3.png";
