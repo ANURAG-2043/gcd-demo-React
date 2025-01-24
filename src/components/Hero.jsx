@@ -22,7 +22,7 @@ class Hero extends PureComponent {
                   Comprehensive City Characteristics Database
                 </h1>
                 <p className="mt-8 text-sm font-reg text-gray-600 max-md:text-xs max-md:mt-4 max-md:mx-2 ">
-                  GeoCityDatabase simplifies access to a comprehensive city characteristic database, offering information on various nations and regions worldwide. Our platform is an excellent resource for academics, analysts, and others seeking accurate and current information worldwide.
+                Our platform provides easy access to the entire city characteristics database via an online download option. This wide variety of databases contains a lot of information on many nations, regions, and their unique characteristics. Data about several cities, including feature names, latitude and longitude coordinates, and other pertinent information, is readily accessible to users. The database is an excellent resource for academics, analysts, and others looking for accurate and current information on cities worldwide because it covers such a wide range of countries and territories. Our platform makes it simple to access and use this priceless material, supporting wise judgment and smart studies in a variety of sectors.
                 </p>
                 <div className="mt-4 max-md:mt-2">
                   <Link to="/service-page">

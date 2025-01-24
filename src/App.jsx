@@ -20,6 +20,7 @@ import DataSourcing from "./pages/DataSourcing";
 import CityDatabases from "./pages/City_db"
 import GlobalInformation from "./pages/Global_Info"
 import Register from './pages/Register';
+import FreeSupport from './pages/Free_support';
 
 import FreeEdition from './pages/products/free'
 import BasicEdition from './pages/products/basic'
@@ -56,6 +57,7 @@ function App() {
 
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/free-support" element={<FreeSupport />} />
           
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />

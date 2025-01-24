@@ -9,19 +9,22 @@ const Navbar = () => {
   return (
     <div className="w-full bg-white fixed top-0 left-0 right-0 z-50 shadow-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
-        {/* Logo Section */}
+        
         <div className="inline-flex items-center space-x-2 pt-3.5 pb-3.5">
           <Link to="/">
             <img src={logo} alt="Logo" className="w-44 max-md:w-28 cursor-pointer" />
           </Link>
         </div>
-        {/* Links */}
+        
         <div className="hidden lg:flex space-x-8">
           <Link to="/product-page" className="text-sm text-gray-800 hover:text-gray-900">
             Products
           </Link>
           <Link to="/about-us" className="text-sm text-gray-800 hover:text-gray-900">
             About Us
+          </Link>
+          <Link to="/free-support" className="text-sm text-gray-800 hover:text-gray-900">
+            Free Support
           </Link>
           <Link to="/contact-us" className="text-sm text-gray-800 hover:text-gray-900">
             Contact
