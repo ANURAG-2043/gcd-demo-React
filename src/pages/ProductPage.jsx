@@ -71,7 +71,7 @@ const ProductPage  = () => {
             </div>
             <div className="product_images text-center">
               <img
-                src="https://www.geodatasource.com/images/products/major-cities.png"
+                src="https://www.google.com/imgres?q=yt&imgurl=https%3A%2F%2Fwww.computerhope.com%2Fjargon%2Fy%2Fyt.png&imgrefurl=https%3A%2F%2Fwww.computerhope.com%2Fjargon%2Fy%2Fyt.htm&docid=L786873NNUWcxM&tbnid=ZjCKO6mGX6gbJM&vet=12ahUKEwigleetl46LAxUfyDgGHRVTNB4QM3oECHEQAA..i&w=300&h=215&hcb=2&ved=2ahUKEwigleetl46LAxUfyDgGHRVTNB4QM3oECHEQAA"
                 alt="Major Cities"
                 className="w-[180px] h-[210px]"
               />
@@ -84,7 +84,7 @@ const ProductPage  = () => {
             </div>
             <div className="product_images text-center">
               <img
-                src="https://www.geodatasource.com/images/products/web-service-location-search.png"
+                src="https://www.google.com/imgres?q=yt&imgurl=https%3A%2F%2Fwww.computerhope.com%2Fjargon%2Fy%2Fyt.png&imgrefurl=https%3A%2F%2Fwww.computerhope.com%2Fjargon%2Fy%2Fyt.htm&docid=L786873NNUWcxM&tbnid=ZjCKO6mGX6gbJM&vet=12ahUKEwigleetl46LAxUfyDgGHRVTNB4QM3oECHEQAA..i&w=300&h=215&hcb=2&ved=2ahUKEwigleetl46LAxUfyDgGHRVTNB4QM3oECHEQAA"
                 alt="Location Search Web Service"
                 className="w-[180px] h-[210px]"
               />
