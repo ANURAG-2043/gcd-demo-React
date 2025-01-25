@@ -4,13 +4,6 @@ import globe from "../images/globe.jpg"
 
 
 class Hero extends PureComponent {
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            
-        }
-    }
 
     render() {
         return (
@@ -25,10 +18,10 @@ class Hero extends PureComponent {
                 Our platform provides easy access to the entire city characteristics database via an online download option. This wide variety of databases contains a lot of information on many nations, regions, and their unique characteristics. Data about several cities, including feature names, latitude and longitude coordinates, and other pertinent information, is readily accessible to users. The database is an excellent resource for academics, analysts, and others looking for accurate and current information on cities worldwide because it covers such a wide range of countries and territories. Our platform makes it simple to access and use this priceless material, supporting wise judgment and smart studies in a variety of sectors.
                 </p>
                 <div className="mt-4 max-md:mt-2">
-                  <Link to="/service-page">
+                  <Link to="/product-page">
                     <button
                       className="btn btn-primary shadow-sm bg-sky-700 px-4 py-3 text-white rounded-md text-xs my-3 hover:bg-green-600/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black max-md:text-[10px] max-md:px-3 max-md:py-[8px]"
-                    >View All Services
+                    >View All Products
                     </button>
                   </Link>
                 </div>
