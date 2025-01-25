@@ -10,7 +10,7 @@ class Hero extends PureComponent {
             <div className="flex max-w-fit max-md:text-center flex-col items-center justify-center md:flex-row  ps-20 mt-8 max-md:ps-4 max-md:mt-8 pt-10">
             
             <div>
-              <div className="md:w-[900px] pt-10">
+              <div className="md:w-[900px] ">
                 <h1 className="inline-flex items-center text-5xl font-email font-semibold max-md:text-2xl max-md:mt-4 max-md:mx-2">
                   Comprehensive City Characteristics Database
                 </h1>
