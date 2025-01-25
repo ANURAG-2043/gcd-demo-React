@@ -43,8 +43,10 @@ class Footer extends PureComponent {
                 <li><Link to="/gold" className="hover:underline">Gold</Link></li>
                 <li><Link to="/platinum" className="hover:underline">Platinum</Link></li>
                 <li><Link to="/titanium" className="hover:underline">Titanium</Link></li>
-                <li><Link to="/major-cities" className="hover:underline">World Major Cities Database</Link></li>
-                <li><Link to="/location-service" className="hover:underline">Location Search Web Service</Link></li>
+                <li><Link to="/major-cities" className="hover:underline">Cities ZIPCode
+Database</Link></li>
+                <li><Link to="/location-service" className="hover:underline">VIP/Paramount [Custom Made]
+GeoCityDatabase</Link></li>
               </ul>
             </div>
 

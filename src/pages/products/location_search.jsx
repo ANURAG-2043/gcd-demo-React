@@ -46,20 +46,24 @@ export default function LocationSearch() {
           <div className="flex justify-center">
             <img
               src={location_web_img} 
-              alt="Location Search Web Service Database"
+              alt="VIP/Paramount [Custom Made]
+GeoCityDatabase Database"
               className="w-[700px] h-[250px]"
             />
           </div>
           <div>
-            <h2 className="text-2xl font-semibold">Location Search Web Service</h2>
+            <h2 className="text-2xl font-semibold">VIP/Paramount [Custom Made]
+GeoCityDatabase</h2>
             <h1 className="text-4xl font-bold text-blue-600">$50</h1>
             <p className="my-4 text-gray-700">
-            GeoDataSource™ Location Search Web Service is a REST API enable user to lookup for city 
+            GeoDataSource™ VIP/Paramount [Custom Made]
+GeoCityDatabase is a REST API enable user to lookup for city 
             name by using latitude and longitude coordinate. It will return the result in either JSON or 
             XML containing the information of the nearest country, region, city, latitude, longitude, 
             currency code, currency name, currency symbol, time of sunrise, time of sunset, time zone
             and distance of input coordinate with the city.<br />
-            The GeoDataSource™ Location Search Web Service consists of two APIs, Nearest City API and Nearest
+            The GeoDataSource™ VIP/Paramount [Custom Made]
+GeoCityDatabase consists of two APIs, Nearest City API and Nearest
             Cities API. Nearest City API will only return one result whereas the Nearest Cities API will 
             return the list of cities within 20km. Paid plan of this Web Service will be auto-renewed and 
             auto-recharged monthly. Below please find the syntax.

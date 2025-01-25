@@ -51,7 +51,8 @@ export default function Titanium() {
             />
           </div>
           <div>
-            <h2 className="text-2xl font-semibold">World Cities Database Titanium Edition</h2>
+            <h2 className="text-2xl font-semibold">Major Cities
+GeoCityDatabase – with utf8</h2>
             <h1 className="text-4xl font-bold text-blue-600">$1249.99</h1>
             <p className="my-4 text-gray-700">
             Database of worldwide cities in text format suitable for any applications requiring a comprehensive list of cities name, 

@@ -51,7 +51,7 @@ export default function Premium() {
             />
           </div>
           <div>
-            <h2 className="text-2xl font-semibold">World Cities Database Premium Edition</h2>
+            <h2 className="text-2xl font-semibold">Exclusive GeoCityDatabase</h2>
             <h1 className="text-4xl font-bold text-blue-600">$499.99</h1>
             <p className="my-4 text-gray-700">
             Database of worldwide cities in text format suitable for any applications requiring a comprehensive 

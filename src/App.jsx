@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 
 import Hero from "./components/Hero";
 import Rate from "./components/Rate";
-import Services from "./components/Services";
+import Products from "./components/Products";
 import Features from "./components/Features";
 import Reviews from "./components/Reviews";
 import Footer from './components/Footer';
@@ -45,35 +45,32 @@ function App() {
           <Route path="/" element={ <>
                 <Hero />
                 <Rate />
-                <Services />
+                <Products />
                 <Features />
-                <Reviews />
-              </> }
-          />
+              </> }/>
 
-          <Route path="/data-sourcing" element={<DataSourcing />} />
-          <Route path="/city_databases" element={<CityDatabases />} />
-          <Route path="/global_information" element={<GlobalInformation />} />
+          <Route path="/data-sourcing" element={<DataSourcing />}/>
+          <Route path="/city_databases" element={<CityDatabases />}/>
+          <Route path="/global_information" element={<GlobalInformation />}/>
 
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/free-support" element={<FreeSupport />} />
-          
-          <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/product-page" element={<ProductPage />} />
+          <Route path="/about-us" element={<AboutUs />}/>
+          <Route path="/contact-us" element={<ContactUs />}/>
+          <Route path="/free-support" element={<FreeSupport />}/>
 
-          <Route path="/free" element={<FreeEdition />} />
-          <Route path="/basic" element={<BasicEdition />} />
-          <Route path="/gold" element={<GoldEdition />} />
-          <Route path="/premium" element={<PremiumEdition />} />
-          <Route path="/platinum" element={<PlatinumEdition />} />
-          <Route path="/titanium" element={<TitaniumEdition />} />
-          <Route path="/major-cities" element={<MajorCitiesEdition />} />
-          <Route path="/location-service" element={<LocationServiceEdition />} />
+          <Route path="/register" element={<Register />}/>
+          <Route path="/login" element={<Login />}/>
+          <Route path="/product-page" element={<ProductPage />}/>
 
+          <Route path="/free" element={<FreeEdition />}/>
+          <Route path="/basic" element={<BasicEdition />}/>
+          <Route path="/gold" element={<GoldEdition />}/>
+          <Route path="/premium" element={<PremiumEdition />}/>
+          <Route path="/platinum" element={<PlatinumEdition />}/>
+          <Route path="/titanium" element={<TitaniumEdition />}/>
+          <Route path="/major-cities" element={<MajorCitiesEdition />}/>
+          <Route path="/location-service" element={<LocationServiceEdition />}/>
 
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<NotFound />}/>
         </Routes>
         <Footer />
         {/* </AuthProvider> */}

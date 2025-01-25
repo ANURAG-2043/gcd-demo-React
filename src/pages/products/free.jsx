@@ -53,7 +53,7 @@ export default function Free() {
             />
           </div>
           <div>
-            <h2 className="text-2xl font-semibold">World Cities Database Free Edition</h2>
+            <h2 className="text-2xl font-semibold">Free GeoCityDatabase</h2>
             <h1 className="text-4xl font-bold text-blue-600">FREE</h1>
             <p className="my-4 text-gray-700">
               Free database of worldwide cities in text format suitable for any applications requiring a comprehensive list

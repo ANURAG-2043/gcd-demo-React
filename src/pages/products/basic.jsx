@@ -55,7 +55,7 @@ export default function Basic() {
             />
           </div>
           <div>
-            <h2 className="text-2xl font-semibold">World Cities Database Basic Edition</h2>
+            <h2 className="text-2xl font-semibold">Essential GeoCityDatabase</h2>
             <h1 className="text-4xl font-bold text-blue-600">$249.99</h1>
             <p className="my-4 text-gray-700">
             Database of worldwide cities in text format suitable for any applications requiring a comprehensive list of cities name and country code. It is a subset of the GeoDataSource™ Cities Database Premium, Gold, Platinum and Titanium Edition.

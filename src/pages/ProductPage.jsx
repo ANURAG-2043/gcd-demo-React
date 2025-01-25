@@ -13,15 +13,15 @@ const ProductPage  = () => {
   return (
     <>
       <section className="py-8 mt-[100px]">
-        <h1 className="text-2xl font-bold text-center mb-[50px]">Services</h1>
+        <h1 className="text-2xl font-bold text-center mb-[50px]">Products</h1>
         <div className="grid grid-cols-4 gap-8 place-items-center mx-auto max-w-6xl">
           <div className="product_images text-center">
             <img src={free_img} alt="Free Edition" className="w-[180px] h-[210px] "
             />
             <Link to="/free" className="text-blue-500 hover:underline mt-2 block">
               <p>
-                <span>World Cities Database</span><br />
-                <span>Free Edition</span>
+                <span>Free</span><br />
+                <span>GeoCityDatabase</span>
               </p>
             </Link>
           </div>
@@ -30,8 +30,8 @@ const ProductPage  = () => {
             />
               <Link to="/basic" className="text-blue-500 hover:underline mt-2 block">
                 <p>
-                  <span>World Cities Database </span><br />
-                  <span>Basic Edition</span>
+                  <span>Essential</span><br />
+                  <span>GeoCityDatabase</span>
                 </p>
               </Link>
             </div>
@@ -39,8 +39,8 @@ const ProductPage  = () => {
               <img src={premium_img} alt="Premium Edition" className="w-[180px] h-[210px]" />
               <Link to="/premium" className="text-blue-500 hover:underline mt-2 block">
                 <p>
-                  <span>World Cities Database </span><br />
-                  <span>Premium Edition</span>
+                  <span>Exclusive</span><br />
+                  <span>GeoCityDatabase</span>
                 </p>
               </Link>
             </div>
@@ -48,8 +48,8 @@ const ProductPage  = () => {
               <img src={gold_img} alt="Gold Edition" className="w-[180px] h-[210px]" />
               <Link to="/gold" className="text-blue-500 hover:underline mt-2 block">
                 <p>
-                  <span>World Cities Database </span><br />
-                  <span>Gold Edition</span>
+                  <span>Elite</span><br />
+                  <span>GeoCityDatabase</span>
                 </p>
               </Link>
             </div>
@@ -57,8 +57,8 @@ const ProductPage  = () => {
               <img src={platinum_img} alt="Platinum Edition" className="w-[180px] h-[210px]" />
               <Link to="/platinum" className="text-blue-500 hover:underline mt-2 block">
                 <p>
-                  <span>World Cities Database</span><br />
-                  <span>Platinum Edition</span>
+                  <span>Ultimate</span><br />
+                  <span>GeoCityDatabase – with utf8 </span>
                 </p>
               </Link>
             </div>
@@ -66,8 +66,8 @@ const ProductPage  = () => {
               <img src={titanium_img} alt="Titanium Edition" className="w-[180px] h-[210px]" />
               <Link to="/titanium" className="text-blue-500 hover:underline mt-2 block">
                 <p>
-                  <span>World Cities Database</span><br />
-                  <span>Titanium Edition</span>
+                  <span>Major Cities</span><br />
+                  <span>GeoCityDatabase – with utf8</span>
                 </p>
               </Link>
             </div>
@@ -78,20 +78,21 @@ const ProductPage  = () => {
               />
               <Link to="/major-cities" className="text-blue-500 hover:underline mt-2 block">
                 <p>
-                  <span>World Major Cities</span><br />
+                  <span>Cities ZIPCode</span><br />
                   <span>Database</span>
                 </p>
               </Link>
             </div>
             <div className="product_images text-center">
               <img
-                src={major_cities} alt="Location Search Web Service"
+                src={major_cities} alt="VIP/Paramount [Custom Made]
+GeoCityDatabase"
                 className="w-[180px] h-[210px]"
               />
               <Link to="/location-service" className="text-blue-500 hover:underline mt-2 block">
                 <p>
-                  <span>Location Search </span><br />
-                  <span>Web Service</span>
+                  <span>VIP/Paramount [Custom Made]</span><br />
+                  <span>GeoCityDatabase</span>
                 </p>
               </Link>
             </div>

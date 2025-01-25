@@ -16,13 +16,13 @@ class Rate extends PureComponent {
         return (
             <>
 
-                <div className="flex flex-row justify-between max-md:text-center w-max-fit pt-6 bg-white px-24 max-md:hidden">
+                {/* <div className="flex flex-row justify-between max-md:text-center w-max-fit pt-6 bg-white px-24 max-md:hidden">
                   <h2 className="text-xl font-semibold max-md:text-sm">Featured in</h2>
                   <img src={logo1} alt="" className="h-[60px] w-[px] max-md:h-[px] max-md:w-[100px] "/>
                   <img src={logo1} alt="" className="h-[60px] w-[px] max-md:h-[px] max-md:w-[100px]"/>
                   <img src={logo1} alt="" className="h-[60px] w-[px] max-md:h-[px] max-md:w-[100px]"/>
                   <img src={logo1} alt="" className="h-[60px] w-[px] max-md:h-[px] max-md:w-[100px]"/>
-                </div>
+                </div> */}
 
 
              <div className="flex flex-row max-md:flex-col w-max-fit w-100 px-32 max-md:px-6  pt-8 py-6 max-md:pt-6 bg-white">

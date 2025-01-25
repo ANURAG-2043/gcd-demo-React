@@ -51,7 +51,8 @@ export default function MajorCities() {
             />
           </div>
           <div>
-            <h2 className="text-2xl font-semibold">World Major Cities Database</h2>
+            <h2 className="text-2xl font-semibold">Cities ZIPCode
+Database</h2>
             <h1 className="text-4xl font-bold text-blue-600">$299.99</h1>
             <p className="my-4 text-gray-700">
             GeoDataSource™ World Major Cities is a database of worldwide major cities that suitable for any 
