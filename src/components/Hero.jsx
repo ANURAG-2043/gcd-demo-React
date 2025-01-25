@@ -7,10 +7,10 @@ class Hero extends PureComponent {
 
     render() {
         return (
-            <div className="flex max-w-fit max-md:text-center flex-col items-center justify-center md:flex-row  ps-20 mt-8 max-md:ps-4 max-md:mt-6">
+            <div className="flex max-w-fit max-md:text-center flex-col items-center justify-center md:flex-row  ps-20 mt-8 max-md:ps-4 max-md:mt-8 pt-10">
             
             <div>
-              <div className="md:w-[900px]">
+              <div className="md:w-[900px] pt-10">
                 <h1 className="inline-flex items-center text-5xl font-email font-semibold max-md:text-2xl max-md:mt-4 max-md:mx-2">
                   Comprehensive City Characteristics Database
                 </h1>
@@ -28,7 +28,7 @@ class Hero extends PureComponent {
                 
               </div>
             </div>
-            <div className="md:h-[px] md:w-[330px] me-20 ms-8 my-14 max-md:w-[160px] max-md:me-4 max-md:ms-2 max-md:my-4 max-md:pb-2">
+            <div className="md:h-[px] md:w-[330px] me-20 ms-8 my-14 max-md:w-[160px] max-md:me-4 max-md:ms-2 max-md:my-4 max-md:pb-2 pt-5">
               <img
                 src={globe}
                 alt="Laptop"
