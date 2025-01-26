@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 // import { account } from "../../utils/appwrite";
-import { Navigate } from "react-router-dom";
-
+// import { Navigate } from "react-router-dom";
 import free_img from "../../images/productImages/cities-free.png";
 import s1 from "../../images/steps/free_steps_imgs/step-1.png";
 import s2 from "../../images/steps/free_steps_imgs/step2.png";
@@ -9,6 +8,11 @@ import s3 from "../../images/steps/free_steps_imgs/step-3.png";
 import s4 from "../../images/steps/free_steps_imgs/step-4.png";
 
 export default function Free() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   // const [isAuthenticated, setIsAuthenticated] = useState(false);
   // const [redirect, setRedirect] = useState(false);
 

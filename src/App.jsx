@@ -23,13 +23,13 @@ import Register from './pages/Register';
 import FreeSupport from './pages/Free_support';
 
 import FreeEdition from './pages/products/free'
-import BasicEdition from './pages/products/basic'
-import GoldEdition from './pages/products/gold'
-import PremiumEdition from './pages/products/premium'
-import PlatinumEdition from './pages/products/platinum'
-import TitaniumEdition from './pages/products/titanium'
+import EssentialEdition from './pages/products/Essential'
+import ExclusiveEdition from './pages/products/Exclusive'
+import EliteEdition from './pages/products/Elite'
+import UltimateEdition from './pages/products/Ultimate'
+import CitiesZipCodeEdition from './pages/products/Cities_ZipCode'
 import MajorCitiesEdition from './pages/products/major_cities'
-import LocationServiceEdition from './pages/products/location_search'
+import CustomEdition from './pages/products/Custom'
 
 
 
@@ -62,13 +62,13 @@ function App() {
           <Route path="/product-page" element={<ProductPage />}/>
 
           <Route path="/free" element={<FreeEdition />}/>
-          <Route path="/basic" element={<BasicEdition />}/>
-          <Route path="/gold" element={<GoldEdition />}/>
-          <Route path="/premium" element={<PremiumEdition />}/>
-          <Route path="/platinum" element={<PlatinumEdition />}/>
-          <Route path="/titanium" element={<TitaniumEdition />}/>
+          <Route path="/essential" element={<EssentialEdition />}/>
+          <Route path="/exclusive" element={<ExclusiveEdition />}/>
+          <Route path="/elite" element={<EliteEdition />}/>
+          <Route path="/ultimate" element={<UltimateEdition />}/>
           <Route path="/major-cities" element={<MajorCitiesEdition />}/>
-          <Route path="/location-service" element={<LocationServiceEdition />}/>
+          <Route path="/cities-zip-code" element={<CitiesZipCodeEdition />}/>
+          <Route path="/custom" element={<CustomEdition />}/>
 
           <Route path="*" element={<NotFound />}/>
         </Routes>

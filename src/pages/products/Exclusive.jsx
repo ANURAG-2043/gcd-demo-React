@@ -2,13 +2,17 @@ import React, { useEffect, useState } from "react";
 // import { account } from "../../utils/appwrite";
 import { Navigate } from "react-router-dom";
 
-import  platinum_img from "../../images/productImages/cities-platinum.png"
-import s1 from "../../images/steps/free_steps_imgs/step-1.png";
-import s2 from "../../images/steps/free_steps_imgs/step2.png";
-import s3 from "../../images/steps/free_steps_imgs/step-3.png";
-import s4 from "../../images/steps/free_steps_imgs/step-4.png";
+import  premium_img from "../../images/productImages/cities-premium.png"
+// import s1 from "../../images/steps/free_steps_imgs/step-1.png";
+// import s2 from "../../images/steps/free_steps_imgs/step2.png";
+// import s3 from "../../images/steps/free_steps_imgs/step-3.png";
+// import s4 from "../../images/steps/free_steps_imgs/step-4.png";
 
-export default function Platinum() {
+export default function Exclusive() {
+  useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+    
   // const [isAuthenticated, setIsAuthenticated] = useState(false);
   // const [redirect, setRedirect] = useState(false);
 
@@ -26,14 +30,22 @@ export default function Platinum() {
   //   checkAuthStatus();
   // }, []);
 
-  const handleDownloadClick = () => {
-    // if (!isAuthenticated) {
-    //   alert("Please log in to access the download button.");
-    //   setRedirect(true); // Set redirect state if user is not logged in
-    // } else {
-    //   console.log("Initiate download...");
-    //   // Add your download logic here
-    // }
+  const handleNotifyMeClick = async () => {
+    const email = prompt("Enter your email to be notified:");
+    if (email) {
+      console.log(email);
+      // try {
+      //   await fetch('/api/notify-me', {
+      //     method: 'POST',
+      //     headers: { 'Content-Type': 'application/json' },
+      //     body: JSON.stringify({ email }),
+      //   });
+      //   alert('You will be notified when the product is launched!');
+      // } catch (error) {
+      //   console.error("Failed to register for notifications:", error);
+      //   alert('Something went wrong. Please try again later.');
+      // }
+    }
   };
 
   // if (redirect) {
@@ -45,33 +57,33 @@ export default function Platinum() {
         <div className="flex items-center justify-center gap-10">
           <div className="flex justify-center">
             <img
-              src={platinum_img} 
-              alt="Platinum Edition Database"
+              src={premium_img} 
+              alt="premium Edition Database"
               className="w-96 h-[250px]"
             />
           </div>
           <div>
-            <h2 className="text-2xl font-semibold">Ultimate
-GeoCityDatabase – with utf8</h2>
-            <h1 className="text-4xl font-bold text-blue-600">$999.99</h1>
+            <h2 className="text-2xl font-semibold">Exclusive GeoCityDatabase</h2>
+            <h1 className="text-4xl font-bold text-blue-600">$499.99</h1>
             <p className="my-4 text-gray-700">
-            Database of worldwide cities in text format suitable for any applications requiring a comprehensive list of cities name, 
-            state/province (ADM1), latitude, longitude, country code. It is a subset of the GeoDataSource™ Cities Database Platinum 
-            and Titanium Edition.
+            Database of worldwide cities in text format suitable for any applications requiring a comprehensive 
+            list of cities name, state/province (ADM1), country code. It is a subset of the GeoDataSource™ Cities 
+            Database Gold, Platinum and Titanium Edition.
             </p>
             <p className="text-gray-600">Latest release: December, 2025</p>
-            <br />
-              <button
-              className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600"
-              onClick={handleDownloadClick}
-            >
-              Download
-            </button>
+          <br />
+          <p className="font-bold text-red-600">This product is launching soon!</p>
+          <button
+            className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 mt-4"
+            onClick={handleNotifyMeClick}
+          >
+            Notify Me
+          </button>
           </div>
         </div>
       </div>
 
-      <section className="mt-20 px-8">
+      {/* <section className="mt-20 px-8">
         <div className="max-w-7xl mx-auto">
             <section className="adv mb-12 ">
             <h2 className="text-xl font-semibold mb-4 ml-[280px]">Advantages</h2>
@@ -147,7 +159,6 @@ GeoCityDatabase – with utf8</h2>
         </div>
         </section>
 
-
         <section className="sql mb-12">
           <h2 className="text-xl font-semibold mb-4 text-center">SQL Statement</h2>
           <div className="step mb-6">
@@ -176,7 +187,7 @@ GeoCityDatabase – with utf8</h2>
                 License" can be used for one database server in a commercial environment with single or multiple connected
                 clients.
             </p>
-        </section>
+        </section> */}
 
     </>
   );

@@ -2,13 +2,17 @@ import React, { useEffect, useState } from "react";
 // import { account } from "../../utils/appwrite";
 import { Navigate } from "react-router-dom";
 
-import titanium_img from "../../images/productImages/cities-titanium-top.png"
-import s1 from "../../images/steps/free_steps_imgs/step-1.png";
-import s2 from "../../images/steps/free_steps_imgs/step2.png";
-import s3 from "../../images/steps/free_steps_imgs/step-3.png";
-import s4 from "../../images/steps/free_steps_imgs/step-4.png";
+import  customdatabase_img from "../../images/productImages/customdatabase.png"
+// import s1 from "../../images/steps/free_steps_imgs/step-1.png";
+// import s2 from "../../images/steps/free_steps_imgs/step2.png";
+// import s3 from "../../images/steps/free_steps_imgs/step-3.png";
+// import s4 from "../../images/steps/free_steps_imgs/step-4.png";
 
-export default function Titanium() {
+export default function Custom() {
+  useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+    
   // const [isAuthenticated, setIsAuthenticated] = useState(false);
   // const [redirect, setRedirect] = useState(false);
 
@@ -26,16 +30,23 @@ export default function Titanium() {
   //   checkAuthStatus();
   // }, []);
 
-  const handleDownloadClick = () => {
-    // if (!isAuthenticated) {
-    //   alert("Please log in to access the download button.");
-    //   setRedirect(true); // Set redirect state if user is not logged in
-    // } else {
-    //   console.log("Initiate download...");
-    //   // Add your download logic here
-    // }
+  const handleNotifyMeClick = async () => {
+    const email = prompt("Enter your email to be notified:");
+    if (email) {
+      console.log(email);
+      // try {
+      //   await fetch('/api/notify-me', {
+      //     method: 'POST',
+      //     headers: { 'Content-Type': 'application/json' },
+      //     body: JSON.stringify({ email }),
+      //   });
+      //   alert('You will be notified when the product is launched!');
+      // } catch (error) {
+      //   console.error("Failed to register for notifications:", error);
+      //   alert('Something went wrong. Please try again later.');
+      // }
+    }
   };
-
   // if (redirect) {
   //   return <Navigate to="/login" replace />;
   // }
@@ -45,33 +56,43 @@ export default function Titanium() {
         <div className="flex items-center justify-center gap-10">
           <div className="flex justify-center">
             <img
-              src={titanium_img} 
-              alt="Titanium Edition Database"
-              className="w-96 h-[250px]"
+              src={customdatabase_img} 
+              alt="VIP/Paramount [Custom Made]
+GeoCityDatabase Database"
+              className="w-[700px] h-[250px]"
             />
           </div>
           <div>
-            <h2 className="text-2xl font-semibold">Major Cities
-GeoCityDatabase – with utf8</h2>
-            <h1 className="text-4xl font-bold text-blue-600">$1249.99</h1>
+            <h2 className="text-2xl font-semibold">VIP/Paramount [Custom Made]
+GeoCityDatabase</h2>
+            <h1 className="text-4xl font-bold text-blue-600">$50</h1>
             <p className="my-4 text-gray-700">
-            Database of worldwide cities in text format suitable for any applications requiring a comprehensive list of cities name, 
-            state/province (ADM1), latitude, longitude, country code. It is a subset of the GeoDataSource™ Cities Database Platinum 
-            and Titanium Edition.
+            GeoDataSource™ VIP/Paramount [Custom Made]
+GeoCityDatabase is a REST API enable user to lookup for city 
+            name by using latitude and longitude coordinate. It will return the result in either JSON or 
+            XML containing the information of the nearest country, region, city, latitude, longitude, 
+            currency code, currency name, currency symbol, time of sunrise, time of sunset, time zone
+            and distance of input coordinate with the city.<br />
+            The GeoDataSource™ VIP/Paramount [Custom Made]
+GeoCityDatabase consists of two APIs, Nearest City API and Nearest
+            Cities API. Nearest City API will only return one result whereas the Nearest Cities API will 
+            return the list of cities within 20km. Paid plan of this Web Service will be auto-renewed and 
+            auto-recharged monthly. Below please find the syntax.
             </p>
             <p className="text-gray-600">Latest release: December, 2025</p>
-            <br />
-              <button
-              className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600"
-              onClick={handleDownloadClick}
-            >
-              Download
-            </button>
+          <br />
+          <p className="font-bold text-red-600">This product is launching soon!</p>
+          <button
+            className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 mt-4"
+            onClick={handleNotifyMeClick}
+          >
+            Notify Me
+          </button>
           </div>
         </div>
       </div>
 
-      <section className="mt-20 px-8">
+      {/* <section className="mt-20 px-8">
         <div className="max-w-7xl mx-auto">
             <section className="adv mb-12 ">
             <h2 className="text-xl font-semibold mb-4 ml-[280px]">Advantages</h2>
@@ -176,7 +197,7 @@ GeoCityDatabase – with utf8</h2>
                 License" can be used for one database server in a commercial environment with single or multiple connected
                 clients.
             </p>
-        </section>
+        </section> */}
 
     </>
   );

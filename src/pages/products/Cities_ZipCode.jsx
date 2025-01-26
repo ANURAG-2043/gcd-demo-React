@@ -2,13 +2,17 @@ import React, { useEffect, useState } from "react";
 // import { account } from "../../utils/appwrite";
 import { Navigate } from "react-router-dom";
 
-import  basic_img from "../../images/productImages/basic.png"
-import s1 from "../../images/steps/free_steps_imgs/step-1.png";
-import s2 from "../../images/steps/free_steps_imgs/step2.png";
-import s3 from "../../images/steps/free_steps_imgs/step-3.png";
-import s4 from "../../images/steps/free_steps_imgs/step-4.png";
+import titanium_img from "../../images/productImages/cities-titanium-top.png"
+// import s1 from "../../images/steps/free_steps_imgs/step-1.png";
+// import s2 from "../../images/steps/free_steps_imgs/step2.png";
+// import s3 from "../../images/steps/free_steps_imgs/step-3.png";
+// import s4 from "../../images/steps/free_steps_imgs/step-4.png";
 
-export default function Basic() {
+export default function Cities_ZipCode() {
+  useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+    
   // const [isAuthenticated, setIsAuthenticated] = useState(false);
   // const [redirect, setRedirect] = useState(false);
 
@@ -26,53 +30,70 @@ export default function Basic() {
   //   checkAuthStatus();
   // }, []);
 
-  const handleDownloadClick = () => {
-    // if (!isAuthenticated) {
-    //   alert("Please log in to access the download button.");
-    //   setRedirect(true); // Redirect user to login if not authenticated
-    // } else {
-    //   const pdfUrl = "/pdfs/basic-database.pdf"; // Path to the PDF
-    //   const link = document.createElement("a");
-    //   link.href = pdfUrl;
-    //   link.download = "basic-database.pdf"; // Name of the file after download
-    //   link.click();
-    // }
+  const handleNotifyMeClick = async () => {
+    const email = prompt("Enter your email to be notified:");
+    if (email) {
+      console.log(email);
+      // try {
+      //   await fetch('/api/notify-me', {
+      //     method: 'POST',
+      //     headers: { 'Content-Type': 'application/json' },
+      //     body: JSON.stringify({ email }),
+      //   });
+      //   alert('You will be notified when the product is launched!');
+      // } catch (error) {
+      //   console.error("Failed to register for notifications:", error);
+      //   alert('Something went wrong. Please try again later.');
+      // }
+    }
   };
 
   // if (redirect) {
   //   return <Navigate to="/login" replace />;
   // }
-
   return (
     <>
+      
+
       <div className="container mt-24 mx-auto px-20">
         <div className="flex items-center justify-center gap-10">
           <div className="flex justify-center">
             <img
-              src={basic_img} 
-              alt="Basic Edition Database"
-              className="w-96 h-[250px]"
+              src={titanium_img} 
+              alt="Major Cities Database"
+              className="w-[600px] h-[250px]"
             />
           </div>
           <div>
-            <h2 className="text-2xl font-semibold">Essential GeoCityDatabase</h2>
-            <h1 className="text-4xl font-bold text-blue-600">$249.99</h1>
+            <h2 className="text-2xl font-semibold">Cities ZIPCode
+Database</h2>
+            <h1 className="text-4xl font-bold text-blue-600">$299.99</h1>
             <p className="my-4 text-gray-700">
-            Database of worldwide cities in text format suitable for any applications requiring a comprehensive list of cities name and country code. It is a subset of the GeoDataSource™ Cities Database Premium, Gold, Platinum and Titanium Edition.
+            GeoDataSource™ World Major Cities is a database of worldwide major cities that suitable for any 
+            applications requiring a comprehensive list of country code and name, region/state/province name, 
+            city name, latitude, longitude and ZIP code. Most major cities in the world are included in this 
+            database in TSV (tab separated values) format, and can be easily access or load into a relational 
+            database for lookup.<br />
+            This database enables a web developer to easily implement drop down lists, or any other solutions, 
+            that requires the list of countries, states and cities. Sample codes written in ASP, .NET and PHP 
+            are provided in the package to generate city names drop down list by countries and states.<br/>
+            The sample codes enable a developer to rapidly deploy and utilize this package. Developer can apply this data for 
+            other purposes such as data validation, auto form filling and etcs.
             </p>
             <p className="text-gray-600">Latest release: December, 2025</p>
-            <br />
-              <button
-              className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600"
-              onClick={handleDownloadClick}
-            >
-              Download
-            </button>
+          <br />
+          <p className="font-bold text-red-600">This product is launching soon!</p>
+          <button
+            className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 mt-4"
+            onClick={handleNotifyMeClick}
+          >
+            Notify Me
+          </button>
           </div>
         </div>
       </div>
 
-      <section className="mt-20 px-8">
+      {/* <section className="mt-20 px-8">
         <div className="max-w-7xl mx-auto">
             <section className="adv mb-12 ">
             <h2 className="text-xl font-semibold mb-4 ml-[280px]">Advantages</h2>
@@ -148,7 +169,6 @@ export default function Basic() {
         </div>
         </section>
 
-
         <section className="sql mb-12">
           <h2 className="text-xl font-semibold mb-4 text-center">SQL Statement</h2>
           <div className="step mb-6">
@@ -177,7 +197,7 @@ export default function Basic() {
                 License" can be used for one database server in a commercial environment with single or multiple connected
                 clients.
             </p>
-        </section>
+        </section> */}
 
     </>
   );
