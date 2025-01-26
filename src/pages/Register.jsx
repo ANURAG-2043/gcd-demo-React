@@ -4,11 +4,13 @@ import { useNavigate } from "react-router-dom";
 // import { useAuth } from '../utils/AuthContext'
 
 const Register = () => {
+
   const registerForm = useRef(null)
   const {user, registerUser} = useAuth()
   const navigate = useNavigate();
 
   useEffect(()=>{
+    window.scrollTo(0, 0);
     if(user){
       navigate('/')
     }

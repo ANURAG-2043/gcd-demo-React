@@ -37,16 +37,14 @@ class Footer extends PureComponent {
             <div>
               <h3 className="text-xl font-semibold mb-4">Product Links</h3>
               <ul className="space-y-2">
-                <li><Link to="/free" className="hover:underline">Free</Link></li>
-                <li><Link to="/basic" className="hover:underline">Basic</Link></li>
-                <li><Link to="/premium" className="hover:underline">Premium</Link></li>
-                <li><Link to="/gold" className="hover:underline">Gold</Link></li>
-                <li><Link to="/platinum" className="hover:underline">Platinum</Link></li>
-                <li><Link to="/titanium" className="hover:underline">Titanium</Link></li>
-                <li><Link to="/major-cities" className="hover:underline">Cities ZIPCode
-Database</Link></li>
-                <li><Link to="/location-service" className="hover:underline">VIP/Paramount [Custom Made]
-GeoCityDatabase</Link></li>
+                <li><Link to="/free" className="hover:underline">Free GeoCityDatabase</Link></li>
+                <li><Link to="/essential" className="hover:underline">Essential GeoCityDatabase</Link></li>
+                <li><Link to="/exclusive" className="hover:underline">Exclusive GeoCityDatabase</Link></li>
+                <li><Link to="/elite" className="hover:underline">Elite GeoCityDatabase</Link></li>
+                <li><Link to="/ultimate" className="hover:underline">Ultimate GeoCityDatabase</Link></li>
+                <li><Link to="/major-cities" className="hover:underline">Major-Cities GeoCityDatabase</Link></li>
+                <li><Link to="/cities-zip-code" className="hover:underline">Cities ZIPCode Database</Link></li>
+                <li><Link to="/custom" className="hover:underline">VIP/Paramount [Custom Made] GeoCityDatabase</Link></li>
               </ul>
             </div>
 
