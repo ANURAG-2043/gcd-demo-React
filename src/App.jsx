@@ -21,7 +21,7 @@ import GlobalInformation from "./pages/Global_Info"
 import Register from './pages/Register';
 import FreeSupport from './pages/Free_support';
 
-import FreeEdition from './pages/products/free'
+import FreeEdition from './pages/products/free';
 import EssentialEdition from './pages/products/Essential'
 import ExclusiveEdition from './pages/products/Exclusive'
 import EliteEdition from './pages/products/Elite'
@@ -36,7 +36,7 @@ import { GoogleOAuthProvider } from '@react-oauth/google';
 function App() {
   return (
     <>
-    <GoogleOAuthProvider clientId="43618399809-npkdaf153vvjd5sgh144r9p5f12v6mpe.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID}>
       <Router>
         <AuthProvider>
         <Navbar />
