@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-// import { account } from "../../utils/appwrite";
-// import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../utils/AuthContext";
 import free_img from "../../images/productImages/cities-free.png";
 import s1 from "../../images/steps/free_steps_imgs/step-1.png";
 import s2 from "../../images/steps/free_steps_imgs/step2.png";
@@ -8,42 +8,23 @@ import s3 from "../../images/steps/free_steps_imgs/step-3.png";
 import s4 from "../../images/steps/free_steps_imgs/step-4.png";
 
 export default function Free() {
+  const { user } = useAuth() || {};
+  const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
-  // const [isAuthenticated, setIsAuthenticated] = useState(false);
-  // const [redirect, setRedirect] = useState(false);
-
-  // useEffect(() => {
-  //   // Check if the user is logged in
-  //   const checkAuthStatus = async () => {
-  //     try {
-  //       await account.get(); // Fetch user details
-  //       setIsAuthenticated(true);
-  //     } catch (error) {
-  //       console.error("User is not authenticated:", error);
-  //       setIsAuthenticated(false);
-  //     }
-  //   };
-  //   checkAuthStatus();
-  // }, []);
 
   const handleDownloadClick = () => {
-    console.log("DOwnload initiated")
-    // if (!isAuthenticated) {
-    //   alert("Please log in to access the download button.");
-    //   setRedirect(true); // Set redirect state if user is not logged in
-    // } else {
-    //   console.log("Initiate download...");
-    //   // Add your download logic here
-    // }
+    if (!user) {
+      alert("Please register or login first to download!");
+      navigate('/login');
+      return;
+    }
+    // Proceed with download logic here
+    console.log("Download initiated for Free Edition");
+    // Add your download implementation here
   };
-
-  // if (redirect) {
-  //   return <Navigate to="/login" replace />;
-  // }
 
   return (
     <>

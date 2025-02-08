@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-// import { useAuth } from '../utils/AuthContext';
+import { useAuth } from '../utils/AuthContext';
 import logo from '../images/logo.png'
 
 const Navbar = () => {
-  // const {user, logoutUser} = useAuth()
-  
+  const { user, logoutUser } = useAuth() || {};
+  const defaultProfilePic = "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y";
+
   return (
-    <div className="w-full bg-white fixed top-0 left-0 right-0 z-50 shadow-md">
+    <nav className="bg-white shadow-lg fixed w-full top-0 z-50">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
         
         <div className="inline-flex items-center space-x-2 pt-3.5 pb-3.5">
@@ -31,27 +32,33 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* <div className="hidden lg:flex items-center space-x-4">
+        <div className="lg:flex items-center space-x-4">
           {user ? (
-            <>
-              <span className="text-sm text-gray-800">Hello, {user?.name}</span>
+            <div className="flex items-center gap-2">
+              <img 
+                src={user.picture || defaultProfilePic} 
+                alt="Profile" 
+                className="w-8 h-8 rounded-full object-cover"
+              />
+              <span className="text-gray-700">Hello, {user.name}</span>
               <button
                 onClick={logoutUser}
-                className="rounded-md bg-red-600 px-3 py-2 text-xs text-white shadow-sm hover:bg-red-700"
+                className="rounded-md bg-red-500 px-5 py-2 text-xs text-white shadow-sm hover:bg-red-700"
               >
                 Logout
               </button>
-            </>
+            </div>
           ) : (
-            <Link to="/login">
-              <button className="rounded-md bg-sky-600 px-5 py-2 text-xs text-white shadow-sm hover:bg-green-600/80">
-                Login
-              </button>
+            <Link 
+              to="/login" 
+              className="rounded-md bg-indigo-500 px-5 py-2 text-xs text-white shadow-sm hover:bg-indigo-700"
+            >
+              Login
             </Link>
           )}
-        </div> */}
+        </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

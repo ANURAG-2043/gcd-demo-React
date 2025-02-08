@@ -1,55 +1,42 @@
 import React, { useEffect, useState } from "react";
-// import { account } from "../../utils/appwrite";
 import { Navigate } from "react-router-dom";
-
-import  customdatabase_img from "../../images/productImages/customdatabase.png"
-// import s1 from "../../images/steps/free_steps_imgs/step-1.png";
-// import s2 from "../../images/steps/free_steps_imgs/step2.png";
-// import s3 from "../../images/steps/free_steps_imgs/step-3.png";
-// import s4 from "../../images/steps/free_steps_imgs/step-4.png";
+import { useAuth } from "../../utils/AuthContext";
+import customdatabase_img from "../../images/productImages/customdatabase.png"
 
 export default function Custom() {
   useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
-    
-  // const [isAuthenticated, setIsAuthenticated] = useState(false);
-  // const [redirect, setRedirect] = useState(false);
+    window.scrollTo(0, 0);
+  }, []);
+  
+  const { user } = useAuth() || {};
+  const [redirect, setRedirect] = useState(false);
 
-  // useEffect(() => {
-  //   // Check if the user is logged in
-  //   const checkAuthStatus = async () => {
-  //     try {
-  //       await account.get(); // Fetch user details
-  //       setIsAuthenticated(true);
-  //     } catch (error) {
-  //       console.error("User is not authenticated:", error);
-  //       setIsAuthenticated(false);
-  //     }
-  //   };
-  //   checkAuthStatus();
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleNotifyMeClick = async () => {
+    if (!user) {
+      setRedirect(true);
+      return;
+    }
+
     const email = prompt("Enter your email to be notified:");
     if (email) {
-      console.log(email);
-      // try {
-      //   await fetch('/api/notify-me', {
-      //     method: 'POST',
-      //     headers: { 'Content-Type': 'application/json' },
-      //     body: JSON.stringify({ email }),
-      //   });
-      //   alert('You will be notified when the product is launched!');
-      // } catch (error) {
-      //   console.error("Failed to register for notifications:", error);
-      //   alert('Something went wrong. Please try again later.');
-      // }
+      try {
+        // You can implement the API call here
+        alert('You will be notified when the product is launched!');
+      } catch (error) {
+        console.error("Failed to register for notifications:", error);
+        alert('Something went wrong. Please try again later.');
+      }
     }
   };
-  // if (redirect) {
-  //   return <Navigate to="/login" replace />;
-  // }
+
+  if (redirect) {
+    return <Navigate to="/login" replace />;
+  }
+
   return (
     <>
       <div className="container mt-24 mx-auto px-20">

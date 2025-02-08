@@ -8,7 +8,6 @@ import Hero from "./components/Hero";
 import Rate from "./components/Rate";
 import Products from "./components/Products";
 import Features from "./components/Features";
-import Reviews from "./components/Reviews";
 import Footer from './components/Footer';
 
 import AboutUs from './pages/AboutUs';
@@ -30,16 +29,16 @@ import UltimateEdition from './pages/products/Ultimate'
 import CitiesZipCodeEdition from './pages/products/Cities_ZipCode'
 import MajorCitiesEdition from './pages/products/major_cities'
 import CustomEdition from './pages/products/Custom'
-
-
+import { AuthProvider } from './utils/AuthContext';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 
 function App() {
-  
   return (
     <>
+    <GoogleOAuthProvider clientId="43618399809-npkdaf153vvjd5sgh144r9p5f12v6mpe.apps.googleusercontent.com">
       <Router>
-        {/* <AuthProvider> */}
+        <AuthProvider>
         <Navbar />
         <Routes>
           <Route path="/" element={ <>
@@ -73,10 +72,11 @@ function App() {
           <Route path="*" element={<NotFound />}/>
         </Routes>
         <Footer />
-        {/* </AuthProvider> */}
+        </AuthProvider>
       </Router>
+    </GoogleOAuthProvider>
     </>
-      );
-    }
+  );
+}
 
 export default App;
